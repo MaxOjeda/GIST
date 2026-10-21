@@ -1,0 +1,44 @@
+# --- datos, checkpoints y resultados pesados: NO van al repo ---
+data/
+experiments*/
+*.pt
+*.ckpt
+*.pth
+*.pkl
+__pycache__/
+*.pyc
+
+# --- logs ---
+logs/
+*.log
+*.out
+
+# --- documentos y scripts que no se suben ---
+*.md
+*.tex
+*.tex.bak*
+*.sh
+dump_*.py
+eval_*.py
+run_*.py
+
+# --- repos de terceros (clonados aparte) y benchmarks locales ---
+AStarNet/
+fastenv/
+NBFNet/
+NBFNet-PyG/
+nbfnet_orig_cfg/
+nbfnet_pyg_cfg/
+ULTRA/
+Exphormer/
+astarnet_cfg/
+
+# --- scratch y backups ---
+*.done
+nohup.out
+*.bak
+*.bak*
+
+# --- credenciales y config local: NUNCA al repo ---
+.credentials.json
+.claude/
